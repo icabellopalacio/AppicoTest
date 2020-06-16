@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title</h2>
+
+<form id="formContact" class="justify-content-center needs-validation" novalidate>
+    <div class="form-group">
+        <label for="ContactName">Name</label>
+        <input type="text" class="form-control" id="ContactName" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="ContactEmail">Email address</label>
+        <input type="email" class="form-control" id="ContactEmail" aria-describedby="emailHelp" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="ContactDealer">Dealer</label>
+        <select class="form-control" id="ContactDealer">
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="ContactModel">Model</label>
+        <select class="form-control" id="ContactModel">
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Contactmessage">Message</label>
+        <textarea class="form-control rounded-0" id="Contactmessage" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="ContactTerms" onclick="EnabledSaveButton();">
+            <label class="custom-control-label" for="ContactTerms">Terms of Service</label>
+        </div>
+    </div>
+    <div class="form-group">
+
+        <button type="submit" id="cmdSaveContact" class="btn btn-primary" onclick="return SaveContact();">Save Contact</button>
+    </div>
+</form>
+
+<script language="javascript">  
+    $(document).ready(function () {
+        InitContactPage();
+    });
+</script>

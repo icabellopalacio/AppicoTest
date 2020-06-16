@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Submissions";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">EMail</th>
+            <th scope="col">DealerName</th>
+            <th scope="col">ModelMake</th>
+            <th scope="col">ModelName</th>
+            <th scope="col">ModelType</th>
+            <th scope="col">Message</th>
+            <th scope="col">CreatedDate</th>
+        </tr>
+    </thead>
+    <tbody id="InventoryList">
+    </tbody>
+</table>
+
+<script language="javascript">
+
+    $(document).ready(function () {
+        InitSubmissionPage();
+    });
+</script>

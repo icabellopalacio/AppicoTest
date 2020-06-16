@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Inventory";
+}
+<h2>@ViewBag.Title</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">VIN</th>
+            <th scope="col">Dealer Name</th>
+            <th scope="col">Model Make</th>
+            <th scope="col">Model Name</th>
+            <th scope="col">Model Type</th>
+        </tr>
+    </thead>
+    <tbody id="InventoryList">
+    </tbody>
+ </table>  
+
+<script language="javascript">
+
+    $(document).ready(function () {
+        InitInventoryPage();
+    });
+</script>
